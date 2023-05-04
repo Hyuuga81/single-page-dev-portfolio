@@ -1,0 +1,428 @@
+/***************** GENERAL STYLES *******************/
+html {
+    font-size: 18px;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    background-color: #151515;
+    font-size: 1em;
+    color: #fff;
+    font-family: 'Space Grotesk', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+}
+
+main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+}
+
+section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+}
+
+.container {
+    width: 92%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a {
+    padding: 0;
+    margin: 0;
+}
+
+/****************** NAV ******************/
+
+nav {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    margin: 20px 0 331px 0;
+}
+
+nav h1 {
+    font-size: 1.33em;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: -0.33px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+nav .socials {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: row wrap;
+}
+
+nav .socials img {
+    width: 13%;
+}
+
+/****************** HERO ******************/
+
+.hero {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    margin-bottom: 80px;
+}
+
+.hero h2 {
+    font-size: 2.22em;
+    font-weight: 700;
+    line-height: 40px;
+    text-align: center;
+    letter-spacing: -1.14px;
+    margin-bottom: 24px;
+}
+
+.hero .stress {
+    border-bottom: 4px solid #4EE1A0;
+}
+
+.hero p {
+    margin-bottom: 24px;
+    font-size: 0.88em;
+    font-weight: 500;
+    line-height: 26px;
+    color: #D9D9D9;
+    text-align: center;
+}
+
+.hero a {
+    font-size: 0.88em;
+    font-weight: 700;
+    line-height: 26px;
+    letter-spacing: 2.29px;
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    border-bottom: 2px solid #4EE1A0;
+    padding-bottom: 10px;
+}
+
+/****************** SKILLS ******************/
+
+.skills {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    padding: 40px 0;
+}
+
+.container .skill {
+    width: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    padding-bottom: 24px;
+
+}
+
+.skill h2 {
+    width: 100%;
+    font-size: 1.78em;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: -1px;
+    color: #fff;
+    text-align: center;
+}
+
+.skill p {
+    font-size: 0.88em;
+    font-weight: 500;
+    line-height: 26px;
+    text-align: center;
+    color: #D9D9D9;
+}
+
+/****************** PROJECTS ******************/
+
+.projects {
+    width: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    padding: 80px 0;
+}
+
+.projects .title-bar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: row wrap;
+}
+
+.title-bar h2 {
+    font-size: 2.22em;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: -1.14px;
+}
+
+.title-bar a {
+    font-size: 0.88em;
+    font-weight: 700;
+    line-height: 26px;
+    letter-spacing: 2.29px;
+    border-bottom: 2px solid #4EE1A0;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    padding-bottom: 10px;
+}
+
+.project-case {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+}
+
+.project {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-flow: row wrap;
+    margin-top: 40px;
+}
+
+.project img {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.project h3 {
+    width: 100%;
+    text-transform: uppercase;
+    font-size: 1.33em;
+    font-weight: 700;
+    line-height: 32px;
+    color: #fff;
+    margin-bottom: 7px;
+}
+
+.project .tools {
+    margin-bottom: 20px;
+}
+
+.tools span {
+    padding-right: 18px;
+    font-size: 1em;
+    font-weight: 500;
+    line-height: 28px;
+    color: #D9D9D9;
+}
+
+.project .links {
+    width: 79%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: row wrap;
+}
+
+.project .links a {
+    font-size: 0.88em;
+    font-weight: 700;
+    line-height: 26px;
+    letter-spacing: 2.29px;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-bottom: 2px solid #4EE1A0;
+    padding-bottom: 10px;
+}
+
+/****************** FOOTER ******************/
+
+footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    background: #242424;
+    padding-bottom: 60px;
+}
+
+footer .contact-info {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    margin: 60px 0 50px 0;
+}
+
+footer h2 {
+    font-size: 2.22em;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: -1.14px;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+footer p {
+    font-size: 0.88em;
+    font-weight: 500;
+    line-height: 26px;
+    color: #D9D9D9;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+footer .contact-form {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    margin-bottom: 87px;
+}
+
+.contact-form form {
+    width: 100%;
+}
+
+form input[type="text"] {
+    width: 100%;
+    margin-bottom: 32px;
+    background-color: #242424;
+    ;
+    color: #fff;
+    font-size: 0.88em;
+    font-weight: 500;
+    line-height: 26px;
+    letter-spacing: -0.22px;
+    opacity: 0.5;
+    border-bottom: 1px solid #fff;
+    border-top: transparent;
+    border-left: transparent;
+    border-right: transparent;
+    padding-bottom: 17px;
+}
+
+form input::placeholder {
+    padding-left: 24px;
+}
+
+form .message input[type="text"] {
+    padding-bottom: 81px;
+}
+
+.submit-case {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-flow: row wrap;
+}
+
+form input[type="submit"] {
+    text-align: right;
+    background: #242424;
+    color: #fff;
+    border-bottom: 2px solid #4EE1A0;
+    padding-bottom: 10px;
+    font-size: 0.88em;
+    line-height: 26px;
+    font-weight: 500;
+    letter-spacing: 2.29px;
+    opacity: 1;
+    border-top: transparent;
+    border-left: transparent;
+    border-right: transparent;
+    text-transform: uppercase;
+}
+
+footer .foot-title {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+}
+
+.foot-title h1 {
+    width: 100%;
+    font-size: 1.33em;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: -0.33px;
+    color: #fff;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.foot-title .socials {
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: row wrap;
+}
+
+.foot-title .socials img {
+    width: 13%;
+}
+
+.mentor {
+    font-size: 0.65em;
+    background: #242424;
+}
+
+.mentor a {
+    color: #fff;
+    text-decoration: none;
+}

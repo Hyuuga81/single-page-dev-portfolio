@@ -25,6 +25,9 @@ header {
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
+    background: url('../images/image-profile-mobile.webp') no-repeat top;
+    background-size: 46%;
+    position: relative;
 }
 
 main {
@@ -138,6 +141,20 @@ nav .socials img {
     text-transform: uppercase;
     border-bottom: 2px solid #4EE1A0;
     padding-bottom: 10px;
+}
+
+header .circle {
+    color: #fff;
+    position: absolute;
+    top: 254px;
+    right: -65px;
+}
+
+header .rings-top {
+    position: absolute;
+    top: 124px;
+    left: -342px;
+    z-index: -1;
 }
 
 /****************** SKILLS ******************/
@@ -292,6 +309,7 @@ footer {
     flex-flow: row wrap;
     background: #242424;
     padding-bottom: 60px;
+    position: relative;
 }
 
 footer .contact-info {
@@ -328,7 +346,9 @@ footer .contact-form {
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
-    margin-bottom: 87px;
+    margin-bottom: 39px;
+    border-bottom: 1px solid #D9D9D9;
+    padding-bottom: 87px;
 }
 
 .contact-form form {
@@ -339,7 +359,7 @@ form input[type="text"] {
     width: 100%;
     margin-bottom: 32px;
     background-color: #242424;
-    ;
+
     color: #fff;
     font-size: 0.88em;
     font-weight: 500;
@@ -425,4 +445,11 @@ footer .foot-title {
 .mentor a {
     color: #fff;
     text-decoration: none;
+}
+
+footer .rings-bottom {
+    position: absolute;
+    bottom: 269px;
+    left: -343px;
+    color: #fff;
 }

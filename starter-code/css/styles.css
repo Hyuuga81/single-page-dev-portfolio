@@ -207,6 +207,14 @@ header .rings-top {
     align-items: center;
     flex-flow: row wrap;
     padding: 80px 0;
+    position: relative;
+}
+
+.projects .rings-middle {
+    position: absolute;
+    z-index: 1;
+    top: -65px;
+    right: -344px;
 }
 
 .projects .title-bar {
@@ -238,6 +246,7 @@ header .rings-top {
 
 .project-case {
     width: 100%;
+    display: flex;
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
@@ -452,4 +461,160 @@ footer .rings-bottom {
     bottom: 269px;
     left: -343px;
     color: #fff;
+}
+
+/********************* TABLET STYLES *********************/
+
+@media (min-width: 768px) {
+    nav {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin: 29px 0 90px 0;
+    }
+
+    nav h1 {
+        width: 24.3%;
+    }
+
+    nav .socials {
+        width: 25%;
+    }
+
+    header {
+        background: url('../images/image-profile-mobile.webp') no-repeat;
+        background-position: right 0px;
+        background-size: auto 600px;
+        margin-bottom: 60px;
+    }
+
+    header .container {
+        justify-content: flex-start;
+    }
+
+    /************** HERO ****************/
+
+    .hero {
+        width: 63%;
+        justify-content: flex-start;
+    }
+
+    header .hero h2 {
+        width: 100%;
+        text-align: left;
+        font-weight: 700;
+        font-size: 4em;
+        line-height: 72px;
+        letter-spacing: -2.1px;
+        margin-bottom: 60px;
+    }
+
+    header .hero p {
+        text-align: left;
+        font-size: 1em;
+        line-height: 28px;
+        font-weight: 500;
+        margin-bottom: 34px;
+    }
+
+    header .hero a {
+        text-align: left;
+    }
+
+    header .circle {
+        top: 471px;
+    }
+
+    header .rings-top {
+        top: 86px;
+    }
+
+    /***************** SKILL ****************/
+
+    .skills {
+        padding: 52px 0;
+        border-bottom: none;
+    }
+
+    .skill {
+        width: 50%;
+        justify-content: flex-start;
+    }
+
+    .skill h2,
+    .skill p {
+        text-align: left;
+        width: 100%;
+    }
+
+    .skill h2 {
+        font-size: 2.67em;
+        font-weight: 700;
+        line-height: 56px;
+        letter-spacing: -1.5px;
+    }
+
+    .skill p {
+        font-size: 1em;
+        font-weight: 500;
+        line-height: 28px;
+    }
+
+    /***************** PROJECTS ****************/
+
+    .projects {
+        padding-top: 100px;
+    }
+
+    .project-case {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .project {
+        width: 48%;
+    }
+
+    /**************** FOOTER ****************/
+
+    .contact-info h2 {
+        width: 100%;
+        font-weight: 4em;
+        font-weight: 700;
+        line-height: 72px;
+        letter-spacing: -2.05px;
+    }
+
+    .contact-info p {
+        width: 58%;
+        font-size: 1em;
+        font-weight: 500;
+        line-height: 28px;
+    }
+
+    .contact-form {
+        width: 100%;
+        padding-bottom: 92px;
+    }
+
+    .contact-form form {
+        width: 58%;
+    }
+
+    footer .rings-bottom {
+        bottom: 130px;
+    }
+
+    footer .foot-title {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .foot-title h1 {
+        width: 24%;
+    }
+
+    .foot-title .socials {
+        width: 27%;
+    }
 }

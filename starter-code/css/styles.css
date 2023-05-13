@@ -618,3 +618,7 @@ footer .rings-bottom {
         width: 27%;
     }
 }
+
+/********************* DESKTOP STYLES *********************/
+
+@media (min-width: 1200px) {}

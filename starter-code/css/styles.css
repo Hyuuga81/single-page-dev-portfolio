@@ -168,6 +168,7 @@ header .rings-top {
     border-top: 1px solid #fff;
     border-bottom: 1px solid #fff;
     padding: 40px 0;
+    position: relative;
 }
 
 .container .skill {
@@ -198,6 +199,13 @@ header .rings-top {
     color: #D9D9D9;
 }
 
+.skills .rings-middle {
+    position: absolute;
+    z-index: 1;
+    bottom: -65px;
+    right: -344px;
+}
+
 /****************** PROJECTS ******************/
 
 .projects {
@@ -210,12 +218,7 @@ header .rings-top {
     position: relative;
 }
 
-.projects .rings-middle {
-    position: absolute;
-    z-index: 1;
-    top: -65px;
-    right: -344px;
-}
+
 
 .projects .title-bar {
     width: 100%;
@@ -475,6 +478,7 @@ footer .rings-bottom {
 
     nav h1 {
         width: 24.3%;
+        margin: 0;
     }
 
     nav .socials {
@@ -482,7 +486,7 @@ footer .rings-bottom {
     }
 
     header {
-        background: url('../images/image-profile-mobile.webp') no-repeat;
+        background: url('../images/image-profile-tablet.webp') no-repeat;
         background-position: right 0px;
         background-size: auto 600px;
         margin-bottom: 60px;
@@ -495,7 +499,7 @@ footer .rings-bottom {
     /************** HERO ****************/
 
     .hero {
-        width: 63%;
+        width: 59.72%;
         justify-content: flex-start;
     }
 
@@ -519,6 +523,10 @@ footer .rings-bottom {
 
     header .hero a {
         text-align: left;
+        font-weight: 700;
+        line-height: 26px;
+        letter-spacing: 2.29px;
+        font-size: 0.88em;
     }
 
     header .circle {
@@ -527,12 +535,13 @@ footer .rings-bottom {
 
     header .rings-top {
         top: 86px;
+        left: -265px;
     }
 
     /***************** SKILL ****************/
 
     .skills {
-        padding: 52px 0;
+        padding: 52px 0 0 0;
         border-bottom: none;
     }
 
@@ -560,19 +569,37 @@ footer .rings-bottom {
         line-height: 28px;
     }
 
+    .skills .rings-middle {
+        bottom: -65px;
+        right: -332px;
+    }
+
     /***************** PROJECTS ****************/
 
     .projects {
-        padding-top: 100px;
+        padding: 100px 0 0 0;
+    }
+
+    .projects h2 {
+        font-size: 4em;
+        font-weight: 700;
+        line-height: 72px;
+        letter-spacing: -2.05px;
+    }
+
+    .projects .title-bar {
+        margin-bottom: 60px;
     }
 
     .project-case {
         width: 100%;
         justify-content: space-between;
+        margin-bottom: 100px;
     }
 
     .project {
         width: 48%;
+        margin-bottom: 60px;
     }
 
     /**************** FOOTER ****************/
@@ -603,6 +630,7 @@ footer .rings-bottom {
 
     footer .rings-bottom {
         bottom: 130px;
+        left: -368px;
     }
 
     footer .foot-title {
@@ -621,4 +649,38 @@ footer .rings-bottom {
 
 /********************* DESKTOP STYLES *********************/
 
-@media (min-width: 1200px) {}
+@media (min-width: 1200px) {
+    /********************** HEADER **********************/
+
+    header {
+        width: 77%;
+        background: url('../images/image-profile-desktop.webp ') no-repeat;
+        background-position: right;
+        background-size: 445px 720px;
+    }
+
+    header .container {
+        width: 100%;
+        justify-content: flex-start;
+    }
+
+    header .circle {
+        top: 521px;
+        right: 380px;
+    }
+
+    nav {
+        width: 97%;
+    }
+
+    header .container .hero {
+        width: 62%;
+    }
+
+    header .hero h2 {
+        font-size: 4.89em;
+        line-height: 88px;
+        letter-spacing: -2.5px;
+    }
+
+}

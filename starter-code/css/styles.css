@@ -650,13 +650,20 @@ footer .rings-bottom {
 /********************* DESKTOP STYLES *********************/
 
 @media (min-width: 1200px) {
+
+    /********************** GENERAL STYLES **********************/
+
+    main .container {
+        width: 77%;
+    }
+
     /********************** HEADER **********************/
 
     header {
         width: 77%;
         background: url('../images/image-profile-desktop.webp ') no-repeat;
         background-position: right;
-        background-size: 445px 720px;
+        background-size: auto 720px;
     }
 
     header .container {
@@ -669,18 +676,74 @@ footer .rings-bottom {
         right: 380px;
     }
 
+    header .rings-top {
+        top: 133px;
+    }
+
     nav {
         width: 97%;
+        margin-bottom: 127px;
+    }
+
+    nav .socials {
+        width: 17.3%;
     }
 
     header .container .hero {
         width: 62%;
     }
 
+
+
     header .hero h2 {
+        width: 100%;
         font-size: 4.89em;
         line-height: 88px;
         letter-spacing: -2.5px;
     }
 
+    header .hero p {
+        width: 63%;
+    }
+
+    header .hero a {
+        margin-right: 280px;
+    }
+
+    /************************ SKILLS *********************/
+
+    .skills {
+        margin-bottom: 85px;
+    }
+
+    .skills .skill {
+        width: 31%;
+        padding-bottom: 0;
+        margin-bottom: 58px;
+    }
+
+    .skill h2 {
+        font-size: 2.67em;
+        font-weight: 700;
+        line-height: 56px;
+        letter-spacing: -1.5px;
+        padding-bottom: 14px;
+    }
+
+    .skill p {
+        font-size: 1em;
+        font-weight: 500;
+        line-height: 28px;
+    }
+
+    .skills .rings-middle {
+        bottom: -5px;
+        right: -339px;
+    }
+
+    /******************** PROJECTS ******************/
+
+    .projects {
+        padding-top: 0;
+    }
 }

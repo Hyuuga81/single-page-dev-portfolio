@@ -660,6 +660,7 @@ footer .rings-bottom {
     /********************** HEADER **********************/
 
     header {
+        max-width: 1110px;
         width: 77%;
         background: url('../images/image-profile-desktop.webp ') no-repeat;
         background-position: right;
@@ -713,7 +714,12 @@ footer .rings-bottom {
     /************************ SKILLS *********************/
 
     .skills {
+        max-width: 1110px;
         margin-bottom: 85px;
+    }
+
+    .skills .container {
+        width: 100%;
     }
 
     .skills .skill {
@@ -744,6 +750,15 @@ footer .rings-bottom {
     /******************** PROJECTS ******************/
 
     .projects {
+        max-width: 1110px;
         padding-top: 0;
+    }
+
+    .projects .container {
+        width: 100%;
+    }
+
+    .title-bar {
+        width: 100%;
     }
 }

@@ -1,7 +1,7 @@
-const imageCase = document.querySelectorAll(".img-case");
+const imageCase = document.querySelectorAll(".project .img-case");
 
-for (let image of imageCase) {
-    const overlay = document.querySelector(".overlay");
+imageCase.forEach(image => {
+    const overlay = image.querySelector(".overlay");
     image.addEventListener("mouseover", function() {
         overlay.classList.remove("hide");
     });
@@ -9,4 +9,7 @@ for (let image of imageCase) {
     image.addEventListener("mouseout", function() {
         overlay.classList.add("hide");
     });
-}
+
+});
+
+

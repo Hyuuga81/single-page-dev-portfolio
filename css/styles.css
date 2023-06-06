@@ -1,5 +1,6 @@
 /***************** GENERAL STYLES *******************/
 html {
+    width: 100%;
     font-size: 18px;
     padding: 0;
     margin: 0;
@@ -17,6 +18,7 @@ body {
     font-family: 'Space Grotesk', sans-serif;
     padding: 0;
     margin: 0;
+    overflow-x: hidden;
 }
 
 header {
@@ -64,6 +66,10 @@ p,
 a {
     padding: 0;
     margin: 0;
+}
+
+.hide {
+    display: none !important;
 }
 
 /****************** NAV ******************/
@@ -321,7 +327,17 @@ footer {
     flex-flow: row wrap;
     background: #242424;
     padding-bottom: 60px;
+}
+
+footer .container {
     position: relative;
+}
+
+footer .container .rings-bottom {
+    position: absolute;
+    bottom: 269px;
+    left: -343px;
+    color: #fff;
 }
 
 footer .contact-info {
@@ -459,12 +475,7 @@ footer .foot-title {
     text-decoration: none;
 }
 
-footer .rings-bottom {
-    position: absolute;
-    bottom: 269px;
-    left: -343px;
-    color: #fff;
-}
+
 
 /********************* TABLET STYLES *********************/
 
@@ -717,13 +728,15 @@ footer .rings-bottom {
 
     /************************ SKILLS *********************/
 
-    .skills {
+    .container {
         max-width: 1110px;
+        width: 100%;
         margin-bottom: 85px;
     }
 
-    .skills .container {
+    .container .skills {
         width: 100%;
+        justify-content: space-between;
     }
 
     .skills .skill {
@@ -842,6 +855,11 @@ footer .rings-bottom {
         align-items: flex-start;
     }
 
+    footer .container .rings-bottom {
+        bottom: 184px;
+        left: -343px;
+    }
+
     footer .contact-info,
     footer .contact-form {
         width: 40%;
@@ -885,5 +903,9 @@ footer .rings-bottom {
 
     .foot-title .socials {
         width: 17.3%;
+    }
+
+    .foot-title .socials img:hover {
+        color: #4EE1A0;
     }
 }

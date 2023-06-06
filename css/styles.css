@@ -330,7 +330,7 @@ footer .contact-info {
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
-    margin: 60px 0 50px 0;
+    margin: 0 0 50px 0;
 }
 
 footer h2 {
@@ -657,6 +657,10 @@ footer .rings-bottom {
         width: 77%;
     }
 
+    .hide {
+        display: none !important;
+    }
+
     /********************** HEADER **********************/
 
     header {
@@ -758,7 +762,128 @@ footer .rings-bottom {
         width: 100%;
     }
 
+    .project {
+        margin: 0 0 69px 0;
+    }
+
+    .img-case {
+        width: 100%;
+        position: relative;
+        margin-bottom: 20px;
+    }
+
+    .project img {
+        margin-bottom: 0;
+    }
+
+    .img-case .overlay {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: row wrap;
+        height: 100%;
+        top: 0;
+        left: 0;
+        position: absolute;
+        z-index: 1;
+        background: #000;
+        opacity: 0.8;
+
+    }
+
+    .img-case .overlay-links {
+        width: 40%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: row wrap;
+    }
+
+    .img-case .overlay-link {
+        text-align: center;
+        font-size: 0.88em;
+        font-weight: 700;
+        line-height: 26px;
+        letter-spacing: 2.29px;
+        color: #fff;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+
+    .img-case .overlay-links a {
+        border-bottom: 2px solid #4EE1A0;
+        padding-bottom: 10px;
+        opacity: 1;
+    }
+
+    .overlay-links .upper {
+        margin-bottom: 38px;
+    }
+
+    .project .tools {
+        margin-bottom: 0;
+    }
+
+    .project .links {
+        display: none;
+    }
+
     .title-bar {
         width: 100%;
+    }
+
+    /******************** CONTACT ******************/
+
+    footer .container {
+        max-width: 1110px;
+        padding-top: 84px;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    footer .contact-info,
+    footer .contact-form {
+        width: 40%;
+    }
+
+    .contact-info h2,
+    .contact-info p {
+        width: 100%;
+        text-align: left;
+    }
+
+    .contact-info h2 {
+        font-weight: 700;
+        font-size: 4.89em;
+        line-height: 88px;
+        margin-bottom: 36px;
+    }
+
+    .contact-form form {
+        width: 100%;
+    }
+
+    .submit-case input[type="submit"]:hover {
+        color: #4EE1A0;
+        cursor: pointer;
+    }
+
+    footer .contact-form {
+        border-bottom: none;
+    }
+
+    footer .foot-title {
+        border-top: 1px solid #979797;
+        padding-top: 47px;
+    }
+
+    .foot-title h1 {
+        font-size: 1.78em;
+        text-align: left;
+    }
+
+    .foot-title .socials {
+        width: 17.3%;
     }
 }

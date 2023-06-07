@@ -27,7 +27,7 @@ header {
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
-    background: url('../images/image-profile-mobile.webp') no-repeat top;
+    background: url('../images/image-profile-mobile.webp') top no-repeat;
     background-size: 46%;
     position: relative;
 }
@@ -678,7 +678,7 @@ footer .foot-title {
         max-width: 1110px;
         width: 77%;
         background: url('../images/image-profile-desktop.webp ') no-repeat;
-        background-position: right;
+        background-position: right top;
         background-size: auto 720px;
     }
 
@@ -697,12 +697,20 @@ footer .foot-title {
     }
 
     nav {
-        width: 97%;
+        width: 100%;
         margin-bottom: 127px;
+    }
+
+    nav h1 {
+        font-size: 1.78em;
     }
 
     nav .socials {
         width: 17.3%;
+    }
+
+    nav .socials img:hover {
+        cursor: pointer;
     }
 
     header .container .hero {
@@ -906,6 +914,6 @@ footer .foot-title {
     }
 
     .foot-title .socials img:hover {
-        color: #4EE1A0;
+        cursor: pointer;
     }
 }

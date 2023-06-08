@@ -18,7 +18,7 @@ body {
     font-family: 'Space Grotesk', sans-serif;
     padding: 0;
     margin: 0;
-    overflow-x: hidden;
+    overflow-x: hidden !important;
 }
 
 header {

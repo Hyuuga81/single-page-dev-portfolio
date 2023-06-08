@@ -49,5 +49,6 @@ if (window.innerWidth >= 1200) {
     // Top and bottom mouseover function call
     mouseFunction(topImages);
     mouseFunction(bottomImages);
-}
+
+} 
 

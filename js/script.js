@@ -1,6 +1,8 @@
 const imageCase = document.querySelectorAll(".project .img-case");
 const topImages = document.querySelectorAll("nav .socials img");
 const bottomImages = document.querySelectorAll("footer .socials img");
+    
+
 
 if (window.innerWidth >= 1200) {
     imageCase.forEach(image => {

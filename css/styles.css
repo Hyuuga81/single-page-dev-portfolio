@@ -383,11 +383,12 @@ footer .contact-form {
     width: 100%;
 }
 
-form input[type="text"] {
+form input[type="text"],
+form .name {
     width: 100%;
     margin-bottom: 32px;
     background-color: #242424;
-
+    outline: none;
     color: #fff;
     font-size: 0.88em;
     font-weight: 500;
@@ -399,6 +400,11 @@ form input[type="text"] {
     border-left: transparent;
     border-right: transparent;
     padding-bottom: 17px;
+    text-transform: capitalize;
+}
+
+form .name:focus {
+    border-bottom: 1px solid #4EE1A0;
 }
 
 form input::placeholder {

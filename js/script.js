@@ -13,13 +13,10 @@ const emailContent = email.value;
 
 myForm.addEventListener('submit', (e) => {
     e.preventDefault();
-    console.log('clicked');
-    
     if (!emailContent.match(regex) || cName.value === "" || cMessage.value === "") {
         // submit the form
         errorMsg.classList.remove('hide');
         exclamation.classList.remove('hide');
-        console.log('fail')
     } else {
         // add red line, message and exclamation
         errorMsg.classList.add('hide');
@@ -27,7 +24,6 @@ myForm.addEventListener('submit', (e) => {
         cName.value = "";
         cMessage.value = "";
         email.value = "";
-        console.log('success');
     }
 });
 
@@ -78,5 +74,4 @@ if (window.innerWidth >= 1200) {
     // Top and bottom mouseover function call
     mouseFunction(topImages);
     mouseFunction(bottomImages);
-
 } 

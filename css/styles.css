@@ -4,9 +4,11 @@ html {
     font-size: 18px;
     padding: 0;
     margin: 0;
+    overflow-x: hidden;
 }
 
 body {
+    position: relative;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -30,6 +32,7 @@ header {
     background: url('../images/image-profile-mobile.webp') top no-repeat;
     background-size: 46%;
     position: relative;
+    overflow: hidden;
 }
 
 main {
@@ -38,6 +41,8 @@ main {
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
+    position: relative;
+    overflow-x: hidden;
 }
 
 section {
@@ -46,6 +51,7 @@ section {
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
+    overflow: hidden;
 }
 
 .container {
@@ -54,6 +60,7 @@ section {
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
+    overflow: hidden;
 }
 
 h1,
@@ -113,6 +120,7 @@ nav .socials img {
     align-items: center;
     flex-flow: row wrap;
     margin-bottom: 80px;
+    overflow: hidden;
 }
 
 .hero h2 {
@@ -150,14 +158,16 @@ nav .socials img {
 }
 
 header .circle {
+
     color: #fff;
     position: absolute;
     top: 254px;
     right: -65px;
 }
 
-header .rings-top {
+body .rings-top {
     position: absolute;
+    width: 530px;
     top: 124px;
     left: -342px;
     z-index: -1;
@@ -175,6 +185,7 @@ header .rings-top {
     border-bottom: 1px solid #fff;
     padding: 40px 0;
     position: relative;
+    overflow-x: hidden;
 }
 
 .container .skill {
@@ -184,7 +195,10 @@ header .rings-top {
     align-items: center;
     flex-flow: row wrap;
     padding-bottom: 24px;
+}
 
+.container .skill-last {
+    padding-bottom: 0;
 }
 
 .skill h2 {
@@ -205,10 +219,10 @@ header .rings-top {
     color: #D9D9D9;
 }
 
-.skills .rings-middle {
+main .rings-middle {
     position: absolute;
     z-index: 1;
-    bottom: -65px;
+    top: 540px;
     right: -344px;
 }
 
@@ -320,6 +334,7 @@ header .rings-top {
 /****************** FOOTER ******************/
 
 footer {
+    position: relative;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -333,10 +348,11 @@ footer .container {
     position: relative;
 }
 
-footer .container .rings-bottom {
+footer .rings-bottom {
+    width: 530px;
     position: absolute;
-    bottom: 269px;
-    left: -343px;
+    top: 436px;
+    left: -359px;
     color: #fff;
 }
 
@@ -381,10 +397,12 @@ footer .contact-form {
 
 .contact-form form {
     width: 100%;
+    overflow-x: hidden;
+    position: relative;
 }
 
 form input[type="text"],
-form .name {
+form #name {
     width: 100%;
     margin-bottom: 32px;
     background-color: #242424;
@@ -400,7 +418,8 @@ form .name {
     border-left: transparent;
     border-right: transparent;
     padding-bottom: 17px;
-    text-transform: capitalize;
+    padding-left: 24px;
+    text-transform: uppercase;
 }
 
 form .name:focus {
@@ -411,9 +430,34 @@ form input::placeholder {
     padding-left: 24px;
 }
 
-form .message input[type="text"] {
+form #message {
     padding-bottom: 81px;
+    margin-top: 32px;
+    text-transform: uppercase;
 }
+
+form #email {
+    margin-bottom: 0;
+    text-transform: uppercase;
+}
+
+.error-msg {
+    width: 100%;
+    font-size: 0.89em;
+    font-weight: normal;
+    text-align: right;
+    color: #FF6F5B;
+    margin: 0;
+}
+
+.fa-circle-exclamation {
+    font-size: 1.1em;
+    position: absolute;
+    color: #FF6F5B;
+    top: 80px;
+    right: 1px;
+}
+
 
 .submit-case {
     width: 100%;
@@ -423,8 +467,7 @@ form .message input[type="text"] {
     flex-flow: row wrap;
 }
 
-form input[type="submit"] {
-    text-align: right;
+form .send {
     background: #242424;
     color: #fff;
     border-bottom: 2px solid #4EE1A0;
@@ -513,6 +556,11 @@ footer .foot-title {
         justify-content: flex-start;
     }
 
+    body .rings-top {
+        top: 86px;
+        left: -265px;
+    }
+
     /************** HERO ****************/
 
     .hero {
@@ -586,9 +634,11 @@ footer .foot-title {
         line-height: 28px;
     }
 
-    .skills .rings-middle {
-        bottom: -65px;
-        right: -332px;
+    main .rings-middle {
+        position: absolute;
+        z-index: 1;
+        top: 330px;
+        right: -344px;
     }
 
     /***************** PROJECTS ****************/
@@ -646,7 +696,7 @@ footer .foot-title {
     }
 
     footer .rings-bottom {
-        bottom: 130px;
+        top: 547px;
         left: -368px;
     }
 
@@ -669,6 +719,10 @@ footer .foot-title {
 @media (min-width: 1200px) {
 
     /********************** GENERAL STYLES **********************/
+
+    body {
+        max-width: 1440px;
+    }
 
     main .container {
         width: 77%;
@@ -698,8 +752,9 @@ footer .foot-title {
         right: 380px;
     }
 
-    header .rings-top {
+    body .rings-top {
         top: 133px;
+        left: -100px;
     }
 
     nav {
@@ -713,6 +768,7 @@ footer .foot-title {
 
     nav .socials {
         width: 17.3%;
+        margin-right: 29.51px;
     }
 
     nav .socials img:hover {
@@ -738,6 +794,10 @@ footer .foot-title {
 
     header .hero a {
         margin-right: 280px;
+    }
+
+    header .hero a:hover {
+        color: #4EE1A0;
     }
 
     /************************ SKILLS *********************/
@@ -773,9 +833,11 @@ footer .foot-title {
         line-height: 28px;
     }
 
-    .skills .rings-middle {
-        bottom: -5px;
-        right: -339px;
+    main .rings-middle {
+        position: absolute;
+        z-index: 1;
+        top: 253px;
+        right: -239px;
     }
 
     /******************** PROJECTS ******************/
@@ -838,6 +900,10 @@ footer .foot-title {
         text-transform: uppercase;
     }
 
+    .img-case .overlay-link:hover {
+        color: #4EE1A0;
+    }
+
     .img-case .overlay-links a {
         border-bottom: 2px solid #4EE1A0;
         padding-bottom: 10px;
@@ -869,9 +935,9 @@ footer .foot-title {
         align-items: flex-start;
     }
 
-    footer .container .rings-bottom {
-        bottom: 184px;
-        left: -343px;
+    footer .rings-bottom {
+        top: 327px;
+        left: -205px;
     }
 
     footer .contact-info,

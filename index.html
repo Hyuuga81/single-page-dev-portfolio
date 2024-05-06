@@ -22,6 +22,7 @@
 </head>
 
 <body>
+  <img src="images/pattern-rings.svg" alt="rings" class="rings-top">
   <header>
     <div class="container">
       <!-- NAVIGATION -->
@@ -46,7 +47,7 @@
 
     </div>
     <img src="images/pattern-circle.svg" alt="circle" class="circle">
-    <img src="images/pattern-rings.svg" alt="rings" class="rings-top">
+    <!-- <img src="images/pattern-rings.svg" alt="rings" class="rings-top"> -->
   </header>
 
   <main>
@@ -80,14 +81,14 @@
           <p>3 Years Experience</p>
         </div>
         <!-- SKILL -->
-        <div class="skill">
+        <div class="skill skill-last">
           <h2>Sass</h2>
           <p>3 Years Experience</p>
         </div>
-        <img src="images/pattern-rings.svg" alt="rings-middle" class="rings-middle">
       </section> <!-- end skils-->
-    </div> <!-- end container-->
 
+    </div> <!-- end container-->
+    <img src="images/pattern-rings.svg" alt="rings-middle" class="rings-middle">
 
     <!-- PROJECTS -->
     <section class="projects">
@@ -233,15 +234,17 @@
       </div>
       <div class="contact-form">
         <form>
-          <input class="name" type="text" id="name" placeholder="    NAME">
-          <input type="text" id="email" placeholder="    EMAIL">
-          <span class="message">
-            <input type="text" id="message" placeholder="    MESSAGE">
-          </span>
+          <input type="text" id="name" placeholder="NAME">
+          <input type="text" id="email" placeholder="EMAIL">
 
+          <p class="error-msg hide">Sorry, invalid format here</p>
+          <input type="text" id="message" placeholder="MESSAGE">
+          <i class="fa-solid fa-circle-exclamation hide"></i>
           <div class="submit-case">
-            <input type="submit" value="Send Message">
+            <input type="submit" value="Send Message" class="send">
           </div>
+
+          <!-- <button type="submit">Send Message</button> -->
         </form>
       </div>
 
@@ -255,11 +258,11 @@
         </div>
       </div>
 
-      <img src="images/pattern-rings.svg" alt="rings bottom" class="rings-bottom">
+
     </div>
 
     <!-- </div> end container -->
-
+    <img src="images/pattern-rings.svg" alt="rings bottom" class="rings-bottom">
   </footer>
 
   <div class="mentor">

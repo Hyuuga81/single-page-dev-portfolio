@@ -1,8 +1,35 @@
 const imageCase = document.querySelectorAll(".project .img-case");
 const topImages = document.querySelectorAll("nav .socials img");
 const bottomImages = document.querySelectorAll("footer .socials img");
-    
+const email = document.querySelector('#email');
+const errorMsg = document.querySelector('.error-msg')
+const myForm = document.querySelector('form');
+const exclamation = document.querySelector('.fa-circle-exclamation');
+const cName = document.querySelector('#name')
+const cMessage = document.querySelector('#message');
+const regex = /^([a-z\._-\d]+)@([a-z\d]+)\.([a-z]{2,8})(\.[a-z]{2,8})?$/i;
 
+const emailContent = email.value;
+
+myForm.addEventListener('submit', (e) => {
+    e.preventDefault();
+    console.log('clicked');
+    
+    if (!emailContent.match(regex) || cName.value === "" || cMessage.value === "") {
+        // submit the form
+        errorMsg.classList.remove('hide');
+        exclamation.classList.remove('hide');
+        console.log('fail')
+    } else {
+        // add red line, message and exclamation
+        errorMsg.classList.add('hide');
+        exclamation.classList.add('hide');
+        cName.value = "";
+        cMessage.value = "";
+        email.value = "";
+        console.log('success');
+    }
+});
 
 if (window.innerWidth >= 1200) {
     imageCase.forEach(image => {
@@ -53,4 +80,3 @@ if (window.innerWidth >= 1200) {
     mouseFunction(bottomImages);
 
 } 
-
